@@ -2240,7 +2240,7 @@ var Swiper = (function () {
         prependSlidesIndexes.push(slides.length - index - 1);
       }
     } else if (activeSlideIndex /* + slidesPerView */ > swiper.slides.length - loopedSlides * 2) {
-      slidesAppended = Math.max(activeSlideIndex - (swiper.slides.length - loopedSlides * 2), params.slidesPerGroup);
+      slidesAppended = Math.max(activeSlideIndex - Math.abs(swiper.slides.length - loopedSlides), params.slidesPerGroup);
       for (let i = 0; i < slidesAppended; i += 1) {
         const index = i - Math.floor(i / slides.length) * slides.length;
         appendSlidesIndexes.push(index);
