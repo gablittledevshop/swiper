@@ -273,6 +273,9 @@ function Autoplay(_ref) {
     if (swiper.destroyed || !swiper.autoplay.running) return;
     slideChanged = true;
   });
+  on('loopFix', () => {
+    resume();
+  });
   Object.assign(swiper.autoplay, {
     start,
     stop,

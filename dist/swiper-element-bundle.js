@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 3, 2023
+ * Released on: October 10, 2023
  */
 
 (function () {
@@ -7673,6 +7673,9 @@
       if (swiper.destroyed || !swiper.autoplay.running) return;
       slideChanged = true;
     });
+    on('loopFix', () => {
+      resume();
+    });
     Object.assign(swiper.autoplay, {
       start,
       stop,
@@ -9244,7 +9247,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: October 3, 2023
+   * Released on: October 10, 2023
    */
 
 
@@ -9576,7 +9579,7 @@
    *
    * Released under the MIT License
    *
-   * Released on: October 3, 2023
+   * Released on: October 10, 2023
    */
 
 

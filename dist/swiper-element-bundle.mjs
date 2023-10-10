@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 3, 2023
+ * Released on: October 10, 2023
  */
 
 import './swiper-bundle.mjs';
